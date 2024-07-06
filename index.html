@@ -40,10 +40,21 @@
             src: url('https://fonts.cdnfonts.com/s/66238/PressStart2P-Regular.woff') format('woff');
         }
     </style>
+    <script>
+        let launcherEnabled = true; // Set to false to disable the launcher
+
+        function handleButtonClick() {
+            if (launcherEnabled) {
+                window.location.href = 'https://www.roblox.com/games/15852790828/hype-techz-hq-2-0';
+            } else {
+                alert('Cannot redirect to game. The launcher has been disabled.');
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Hype Techz HQ 2.0 Launcher</h1>
-    <button onclick="window.location.href='https://www.roblox.com/games/15852790828/hype-techz-hq-2-0'">Play</button>
+    <button onclick="handleButtonClick()">Play</button>
     <p>This website is a launcher for Hype Techz HQ 2.0</p>
 </body>
 </html>
